@@ -13,7 +13,7 @@ public class MaConnexion {
     public String pwd="";
     public static MaConnexion cn;
     private Connection cnx;
-    private MaConnexion(){
+    public MaConnexion(){
         try {
             cnx=DriverManager.getConnection(url, user, pwd);
             System.out.println("Connexion etablie");

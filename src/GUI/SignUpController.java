@@ -13,6 +13,7 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
+import javafx.scene.control.ListView;
 import javafx.scene.control.TextField;
 
 /**
@@ -22,14 +23,11 @@ import javafx.scene.control.TextField;
  */
 public class SignUpController implements Initializable {
 
-    @FXML
     private TextField tfMat;
-    @FXML
     private TextField tfMarque;
-    @FXML
     private TextField tfCouleur;
     @FXML
-    private Button btnajouter;
+    private ListView<?> tfListeV;
   
 
     /**
@@ -42,7 +40,6 @@ public class SignUpController implements Initializable {
         // TODO
     }    
 
-    @FXML
     private void ajouterUser(ActionEvent event) {
         String matricule = tfMat.getText();
         

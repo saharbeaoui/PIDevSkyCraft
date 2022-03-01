@@ -16,7 +16,7 @@ public class App extends Application {
     
     @Override
     public void start(Stage stage) throws Exception {
-        Parent root = FXMLLoader.load(getClass().getResource("Chauffeur.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("AfficherChauffeur.fxml"));
         Scene scene = new Scene(root);
         scene.setFill(Color.TRANSPARENT);
         stage.setScene(scene);
