@@ -27,12 +27,13 @@ public class VoitureService {
     }
     
     public void ajouterVoiture(Voiture V){
-        String sql ="insert into voiture(marque,matricule,couleur) Values(?,?,?)";
+        String sql ="insert into voiture(matricule,marque,couleur) Values(?,?,?)";
         try {
             ste=mc.prepareStatement(sql);
-            ste.setString(1, V.getMarque());
-            ste.setString(2, V.getMatricule());
+            ste.setString(1, V.getMatricule());
+            ste.setString(2, V.getMarque());
             ste.setString(3, V.getCouleur());
+            //System.out.println(V.getMatricule());
             
             ste.executeUpdate();
             System.out.println("voiture ajoutée");

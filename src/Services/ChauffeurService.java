@@ -27,7 +27,7 @@ public class ChauffeurService {
     }
     
     public void ajouterChauffeur(Chauffeur C){
-        String sql ="insert into chauffeur(nom_chauffeur,prenom_chauffeur,cin_chauffeur,num_tel_chauffeur,email_chauffeur,date_naissance_chauffeur,num_compte_bancaire) Values(?,?,?,?,?,?,?)";
+        String sql ="insert into chauffeur(nom_chauffeur,prenom_chauffeur,cin_chauffeur,num_tel_chauffeur,email_chauffeur,num_compte_bancaire) Values(?,?,?,?,?,?)";
         try {
             ste=mc.prepareStatement(sql);
             ste.setString(1, C.getNom_chauffeur());
@@ -35,8 +35,7 @@ public class ChauffeurService {
             ste.setString(3, C.getCin_chauffeur());
             ste.setInt(4, C.getNum_tel_chauffeur());
             ste.setString(5, C.getEmail_chauffeur());
-            ste.setString(6, C.getDate_naissance_chauffeur());
-            ste.setString(7, C.getNum_compte_bancaire());
+            ste.setString(6, C.getNum_compte_bancaire());
             
             ste.executeUpdate();
             System.out.println("Chauffeur ajoutée");

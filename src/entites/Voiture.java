@@ -25,6 +25,10 @@ public class Voiture {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
+    public Voiture(String matricule, String marque, String couleur) {
+        //throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
     public int getId_voiture() {
         return id_voiture;
     }

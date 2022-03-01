@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="480.0" prefWidth="480.0" styleClass="blue-panel" stylesheets="@style.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.ChauffeurController">
+   <children>
+      <Label text="Ajouter Chauffeur" textAlignment="CENTER" textFill="#238aff">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+         <VBox.margin>
+            <Insets left="160.0" right="100.0" top="10.0" />
+         </VBox.margin>
+      </Label>
+      <HBox prefHeight="37.0" prefWidth="480.0">
+         <children>
+            <TextField fx:id="tfNom" promptText="Nom" styleClass="tf_box" HBox.hgrow="ALWAYS">
+               <HBox.margin>
+                  <Insets left="15.0" right="15.0" top="20.0" />
+               </HBox.margin>
+            </TextField>
+         </children>
+      </HBox>
+      <HBox prefHeight="37.0" prefWidth="480.0">
+         <children>
+            <TextField fx:id="tfPrenom" promptText="Prenom" styleClass="tf_box" HBox.hgrow="ALWAYS">
+               <HBox.margin>
+                  <Insets top="20.0" />
+               </HBox.margin></TextField>
+         </children>
+         <VBox.margin>
+            <Insets left="15.0" right="15.0" top="10.0" />
+         </VBox.margin>
+      </HBox>
+      <HBox prefHeight="37.0" prefWidth="480.0" />
+      <TextField fx:id="tfCin" promptText="CIN" styleClass="tf_box">
+         <VBox.margin>
+            <Insets left="15.0" right="15.0" />
+         </VBox.margin>
+      </TextField>
+      <HBox prefHeight="37.0" prefWidth="480.0">
+         <children>
+            <TextField fx:id="tfTel" promptText="Tel" styleClass="tf_box" HBox.hgrow="ALWAYS">
+               <HBox.margin>
+                  <Insets top="10.0" />
+               </HBox.margin>
+            </TextField>
+         </children>
+         <VBox.margin>
+            <Insets left="15.0" right="15.0" top="20.0" />
+         </VBox.margin>
+      </HBox>
+      <HBox prefHeight="37.0" prefWidth="480.0">
+         <children>
+            <TextField fx:id="tfEmail" promptText="Email" styleClass="tf_box" HBox.hgrow="ALWAYS">
+               <HBox.margin>
+                  <Insets left="15.0" right="15.0" top="20.0" />
+               </HBox.margin>
+            </TextField>
+         </children>
+      </HBox>
+      <HBox prefHeight="37.0" prefWidth="480.0" />
+      <HBox prefHeight="37.0" prefWidth="480.0">
+         <children>
+            <TextField fx:id="tfBan" promptText="Num compte bancaire" styleClass="tf_box" HBox.hgrow="ALWAYS">
+               <HBox.margin>
+                  <Insets left="15.0" right="15.0" top="20.0" />
+               </HBox.margin>
+            </TextField>
+         </children>
+      </HBox>
+      <Button fx:id="btnajouterchauff" mnemonicParsing="false" onAction="#ajouterChauffeur" prefHeight="43.0" prefWidth="560.0" styleClass="blue-btn" text="Ajouter" textFill="WHITE">
+         <font>
+            <Font size="17.0" />
+         </font>
+         <VBox.margin>
+            <Insets left="15.0" right="15.0" top="20.0" />
+         </VBox.margin>
+      </Button>
+   </children>
+</VBox>
