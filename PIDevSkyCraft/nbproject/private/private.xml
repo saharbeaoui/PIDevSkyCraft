@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/C:/Users/sinad/OneDrive/Bureau/ConnexionSkyCraft/src/skycraft/entities/Contrat.java</file>
+            <file>file:/C:/Users/sinad/OneDrive/Bureau/ConnexionSkyCraft/src/skycraft/GUI/style.css</file>
+            <file>file:/C:/Users/sinad/OneDrive/Bureau/ConnexionSkyCraft/src/skycraft/entities/Voiture.java</file>
+            <file>file:/C:/Users/sinad/OneDrive/Bureau/ConnexionSkyCraft/src/skycraft/GUI/AjouterConge.fxml</file>
+            <file>file:/C:/Users/sinad/OneDrive/Bureau/ConnexionSkyCraft/src/skycraft/entities/Conge.java</file>
+            <file>file:/C:/Users/sinad/OneDrive/Bureau/ConnexionSkyCraft/src/skycraft/tools/MaConnexion.java</file>
+            <file>file:/C:/Users/sinad/OneDrive/Bureau/ConnexionSkyCraft/src/skycraft/entities/enums/poste.java</file>
+            <file>file:/C:/Users/sinad/OneDrive/Bureau/ConnexionSkyCraft/src/skycraft/GUI/AfficherCongeController.java</file>
+            <file>file:/C:/Users/sinad/OneDrive/Bureau/ConnexionSkyCraft/src/skycraft/tests/Test.java</file>
+            <file>file:/C:/Users/sinad/OneDrive/Bureau/ConnexionSkyCraft/src/skycraft/GUI/AjouterCongeController.java</file>
+            <file>file:/C:/Users/sinad/OneDrive/Bureau/ConnexionSkyCraft/src/skycraft/services/ContratService.java</file>
+            <file>file:/C:/Users/sinad/OneDrive/Bureau/ConnexionSkyCraft/src/skycraft/entities/enums/etat_ab.java</file>
+            <file>file:/C:/Users/sinad/OneDrive/Bureau/ConnexionSkyCraft/src/skycraft/entities/Chambre.java</file>
+            <file>file:/C:/Users/sinad/OneDrive/Bureau/ConnexionSkyCraft/src/skycraft/entities/Evenement.java</file>
+            <file>file:/C:/Users/sinad/OneDrive/Bureau/ConnexionSkyCraft/src/skycraft/entities/enums/role.java</file>
+            <file>file:/C:/Users/sinad/OneDrive/Bureau/ConnexionSkyCraft/src/skycraft/entities/Hotel.java</file>
+            <file>file:/C:/Users/sinad/OneDrive/Bureau/ConnexionSkyCraft/src/skycraft/entities/enums/type.java</file>
+            <file>file:/C:/Users/sinad/OneDrive/Bureau/ConnexionSkyCraft/src/skycraft/entities/User.java</file>
+            <file>file:/C:/Users/sinad/OneDrive/Bureau/ConnexionSkyCraft/src/skycraft/services/CongeService.java</file>
+            <file>file:/C:/Users/sinad/OneDrive/Bureau/ConnexionSkyCraft/src/skycraft/entities/Absence.java</file>
+            <file>file:/C:/Users/sinad/OneDrive/Bureau/ConnexionSkyCraft/src/skycraft/GUI/NewFXMain.java</file>
+            <file>file:/C:/Users/sinad/OneDrive/Bureau/ConnexionSkyCraft/src/skycraft/GUI/ajouterconge.css</file>
+            <file>file:/C:/Users/sinad/OneDrive/Bureau/ConnexionSkyCraft/src/skycraft/GUI/AfficherConge.fxml</file>
+            <file>file:/C:/Users/sinad/OneDrive/Bureau/ConnexionSkyCraft/src/skycraft/services/AbsenceService.java</file>
+        </group>
+    </open-files>
+</project-private>
