@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AffichageReservationFactureController">
+   <children>
+      <AnchorPane layoutX="2.0" layoutY="-1.0" prefHeight="558.0" prefWidth="212.0" style="-fx-background-color: #C367D2;">
+         <children>
+            <Button contentDisplay="CENTER" graphicTextGap="15.0" layoutX="-1.0" layoutY="195.0" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" onAction="#GoVol" prefHeight="46.0" prefWidth="213.0" style="-fx-background-color: #C367D2;" text="Vol" textFill="WHITE" textOverrun="CENTER_ELLIPSIS" />
+            <Button graphicTextGap="15.0" layoutX="-1.0" layoutY="242.0" mnemonicParsing="false" onAction="#GoVolgenerique" prefHeight="46.0" prefWidth="213.0" style="-fx-background-color: #C367D2;" text="Vol Generique" textAlignment="CENTER" textFill="WHITE" textOverrun="CENTER_ELLIPSIS" />
+            <Button graphicTextGap="15.0" layoutX="-1.0" layoutY="288.0" mnemonicParsing="false" onAction="#GoFacture" prefHeight="46.0" prefWidth="213.0" style="-fx-background-color: #C367D2;" text="Facture" textFill="#740057" />
+            <Button graphicTextGap="35.0" layoutX="-1.0" layoutY="334.0" mnemonicParsing="false" onAction="#GoReservation" prefHeight="46.0" prefWidth="213.0" style="-fx-background-color: #C367D2;" text="Reservation" textFill="WHITE" />
+         </children>
+         <effect>
+            <DropShadow />
+         </effect>
+      </AnchorPane>
+      <TableView fx:id="voltab" layoutX="263.0" layoutY="178.0" prefHeight="125.0" prefWidth="540.0">
+         <columns>
+            <TableColumn fx:id="id" minWidth="0.0" prefWidth="0.0" text="id" />
+            <TableColumn fx:id="designation" prefWidth="134.0" text="Designation" />
+            <TableColumn fx:id="nbr" prefWidth="138.0" text="Nombre de personne" />
+            <TableColumn fx:id="prix_unitaire" prefWidth="136.0" text="Prix unitaire" />
+            <TableColumn fx:id="prix_total" prefWidth="129.0" text="Prix total" />
+            <TableColumn fx:id="fact" minWidth="0.0" prefWidth="2.0" text="f" />
+         </columns>
+      </TableView>
+      <Pane layoutX="214.0" layoutY="-1.0" prefHeight="159.0" prefWidth="609.0" style="-fx-background-color: #C367D2;">
+         <children>
+            <Label alignment="TOP_CENTER" contentDisplay="CENTER" layoutY="61.0" prefHeight="38.0" prefWidth="609.0" text="Facture Reservation" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Microsoft Sans Serif" size="33.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Button alignment="CENTER" cacheShape="false" centerShape="false" focusTraversable="false" graphicTextGap="35.0" layoutX="463.0" layoutY="312.0" mnemonicParsing="false" onAction="#AfficherReservations" prefHeight="36.0" prefWidth="111.0" style="-fx-background-color: #C367D2; -fx-background-radius: 30;" text="Voire reservation" textFill="WHITE" />
+      <TableView fx:id="reservationtab" layoutX="314.0" layoutY="361.0" prefHeight="182.0" prefWidth="410.0">
+         <columns>
+            <TableColumn fx:id="idr" minWidth="0.0" prefWidth="0.0" text="id" />
+            <TableColumn fx:id="nbrr" prefWidth="201.0" text="Nombre de personne" />
+            <TableColumn fx:id="date_reservation" prefWidth="208.0" text="Date de Reservation" />
+            <TableColumn fx:id="iduser" minWidth="0.0" prefWidth="0.0" text="user" />
+            <TableColumn fx:id="vol" prefWidth="37.0" text="vol" />
+            <TableColumn fx:id="volgenerique" minWidth="0.0" prefWidth="1.0" text="f" />
+         </columns>
+      </TableView>
+   </children>
+</AnchorPane>
