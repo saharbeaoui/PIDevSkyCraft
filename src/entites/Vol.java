@@ -15,7 +15,7 @@ public class Vol {
     private int montant ;
     private int idVolGenerique ;
     
-    
+   
     public Vol(int idVol, LocalTime heureDepart, LocalTime arrivee, int montant, int idVolGenerique) {
         this.idVol = idVol;
         this.heureDepart = heureDepart;
