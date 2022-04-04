@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.VolController">
+   <children>
+      <AnchorPane id="AnchorPane" layoutX="10.0" layoutY="10.0" prefHeight="547.0" prefWidth="808.0">
+         <children>
+            <AnchorPane layoutX="-13.0" layoutY="-11.0" prefHeight="558.0" prefWidth="212.0" style="-fx-background-color: #C367D2;">
+               <children>
+                  <Button contentDisplay="CENTER" graphicTextGap="15.0" layoutX="-1.0" layoutY="195.0" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" onAction="#GoVol" prefHeight="46.0" prefWidth="213.0" style="-fx-background-color: #C367D2;" text="Vol" textFill="#740057" textOverrun="CENTER_ELLIPSIS" />
+                  <Button graphicTextGap="15.0" layoutX="-1.0" layoutY="242.0" mnemonicParsing="false" onAction="#GoVolgenerique" prefHeight="46.0" prefWidth="213.0" style="-fx-background-color: #C367D2;" text="Vol Generique" textAlignment="CENTER" textFill="WHITE" textOverrun="CENTER_ELLIPSIS" />
+                  <Button graphicTextGap="15.0" layoutX="-1.0" layoutY="288.0" mnemonicParsing="false" onAction="#GoFacture" prefHeight="46.0" prefWidth="213.0" style="-fx-background-color: #C367D2;" text="Facture" textFill="WHITE" />
+                  <Button graphicTextGap="35.0" layoutX="-1.0" layoutY="334.0" mnemonicParsing="false" onAction="#GoReservation" prefHeight="46.0" prefWidth="213.0" style="-fx-background-color: #C367D2;" text="Reservation" textFill="WHITE" />
+               </children>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </AnchorPane>
+            <TableView fx:id="voltab" layoutX="247.0" layoutY="160.0" prefHeight="182.0" prefWidth="540.0">
+               <columns>
+                  <TableColumn fx:id="id" minWidth="0.0" prefWidth="0.0" text="id" />
+                  <TableColumn fx:id="lieudepart" prefWidth="113.0" text="Lieu de Depart" />
+                  <TableColumn fx:id="lieuarrive" prefWidth="117.0" text="Lieu d'arrivé" />
+                  <TableColumn fx:id="datedepart" prefWidth="118.0" text="Date de Depart" />
+                  <TableColumn fx:id="datearrivee" prefWidth="92.0" text="Date d'arrive" />
+                  <TableColumn fx:id="montant" prefWidth="98.0" text="Montant" />
+                  <TableColumn fx:id="fact" minWidth="0.0" prefWidth="1.0" text="f" />
+               </columns>
+            </TableView>
+            <Button alignment="CENTER" cacheShape="false" centerShape="false" focusTraversable="false" graphicTextGap="35.0" layoutX="249.0" layoutY="355.0" mnemonicParsing="false" onAction="#GoAjoutReservation" prefHeight="36.0" prefWidth="111.0" style="-fx-background-color: #C367D2; -fx-background-radius: 30;" text="Réserver" textFill="WHITE" />
+            <Button alignment="CENTER" cacheShape="false" centerShape="false" focusTraversable="false" graphicTextGap="35.0" layoutX="392.0" layoutY="355.0" mnemonicParsing="false" onAction="#SupprimerVol" prefHeight="36.0" prefWidth="118.0" style="-fx-background-color: #C367D2; -fx-background-radius: 30;" text="Supprimer" textFill="WHITE">
+               <padding>
+                  <Insets left="18.0" />
+               </padding>
+            </Button>
+            <ImageView fitHeight="22.0" fitWidth="29.0" layoutX="410.0" layoutY="362.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../finalllllll/src/Images/Plan%20de%20travail%20–%207.png" />
+               </image>
+            </ImageView>
+            <Pane layoutX="199.0" layoutY="-11.0" prefHeight="159.0" prefWidth="609.0" style="-fx-background-color: #C367D2;">
+               <children>
+                  <Label alignment="TOP_CENTER" contentDisplay="CENTER" layoutY="61.0" prefHeight="38.0" prefWidth="609.0" text="Vol" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font name="Microsoft Sans Serif" size="33.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Button alignment="CENTER" cacheShape="false" centerShape="false" focusTraversable="false" graphicTextGap="35.0" layoutX="542.0" layoutY="355.0" mnemonicParsing="false" onAction="#AjouterVol" prefHeight="36.0" prefWidth="111.0" style="-fx-background-color: #C367D2; -fx-background-radius: 30;" text="Ajouter vol" textFill="WHITE" />
+            <DatePicker fx:id="recherchedate" layoutX="305.0" layoutY="400.0" onAction="#chercherdate" promptText="Recherche date" />
+            <TextField fx:id="chercherlieu" layoutX="560.0" layoutY="400.0" onAction="#rechercheparlieu" prefHeight="25.0" prefWidth="159.0" promptText="Recherche lieu" />
+            <DatePicker fx:id="datedepart1" layoutX="304.0" layoutY="455.0" />
+            <DatePicker fx:id="datearrive1" layoutX="559.0" layoutY="455.0" />
+            <TextField fx:id="heuredepart" layoutX="304.0" layoutY="508.0" prefHeight="25.0" prefWidth="32.0" />
+            <TextField fx:id="minutedepart" layoutX="343.0" layoutY="508.0" prefHeight="25.0" prefWidth="32.0" />
+            <TextField fx:id="heurearrive" layoutX="559.0" layoutY="508.0" prefHeight="25.0" prefWidth="32.0" />
+            <TextField fx:id="minutearrive" layoutX="598.0" layoutY="508.0" prefHeight="25.0" prefWidth="32.0" />
+            <Text layoutX="305.0" layoutY="445.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Date de depart" />
+            <Text layoutX="560.0" layoutY="444.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Date d'arrivé" />
+            <Text layoutX="305.0" layoutY="500.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Heure de depart" />
+            <Text layoutX="560.0" layoutY="499.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Heure d'arrivé" />
+            <Button alignment="CENTER" cacheShape="false" centerShape="false" focusTraversable="false" graphicTextGap="35.0" layoutX="678.0" layoutY="355.0" mnemonicParsing="false" onAction="#ModifierVol" prefHeight="36.0" prefWidth="111.0" style="-fx-background-color: #C367D2; -fx-background-radius: 30;" text="Modifier" textFill="WHITE" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
